@@ -7,7 +7,7 @@ const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 module.exports = {
   siteMetadata: {
     siteTitle: `Max`,
-    siteTitleAlt: `Max's Swamp`,
+    siteTitleAlt: `Max`,
     siteUrl: `https://blog.maxwowo.com`,
     siteDescription: `Max's personal blog.`,
     siteLanguage: `en`,
