@@ -7,7 +7,7 @@ const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 module.exports = {
   siteMetadata: {
     siteTitle: `Max`,
-    siteTitleAlt: `Max`,
+    siteTitleAlt: `ツ`,
     siteUrl: `https://blog.maxwowo.com`,
     siteDescription: `Max's personal blog.`,
     siteLanguage: `en`,
@@ -48,10 +48,10 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Max's Swamp`,
-        short_name: `Max Wo`,
-        siteHeadline: `This is my swamp`,
-        description: `This is my swamp`,
+        name: `ツ`,
+        short_name: `ツ`,
+        siteHeadline: `Max's blog`,
+        description: `Max's blog`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#6B46C1`,
