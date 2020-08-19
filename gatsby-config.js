@@ -48,8 +48,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `ツ`,
-        short_name: `ツ`,
+        name: `Max`,
+        short_name: `Max`,
         siteHeadline: `Max's blog`,
         description: `Max's blog`,
         start_url: `/`,
