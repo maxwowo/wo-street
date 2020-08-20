@@ -9,7 +9,7 @@ module.exports = {
     siteTitle: `Max`,
     siteTitleAlt: `Wo Street`,
     siteUrl: `https://blog.maxwowo.com`,
-    siteDescription: `Max's personal blog.`,
+    siteDescription: `Max's blog`,
     siteLanguage: `en`,
   },
   plugins: [
