@@ -1,0 +1,57 @@
+---
+title: Making a Discord music bot
+date: 2020-08-21
+tags:
+  - One Ok Bot
+---
+
+As I said in the previous post, this post is going to be all about the kickass [Discord bot](https://github.com/maxwowo/one-ok-bot) that I made in the last couple of days. There's quite a bit of stuff to go through, so grab some popcorn and find somewhere comfy, you're in for a ride.
+
+## Motivation
+
+By now y'all probably know what the bot does, if you don't then just click on that purple link above to learn about it. Long story short, One Ok Bot is just a music bot that has a few more commands related to a pretty dope J-Rock band called [One Ok Rock](https://open.spotify.com/artist/7k73EtZwoPs516ZxE72KsO). So why the hell did I reinvent the wheel and make another bot instead of just using Groovy or whatever?
+
+1. Because I wanted to be able to play my playlist with just one command
+2. Because I didn't want to revise for exams but I needed to do something to not feel guilty about not being productive
+
+That's basically it.
+
+## Research
+
+A wise lad once said, "any code that you didn't write is good code," which is absolutely true. That's also why One Ok Bot is built with as many external libraries as possible so that I didn't have to do as much work myself. It's pretty easy to choose libraries for Discord bots, since all you really need is a Discord API framework and a music player library. Because I used Kotlin for One Ok Bot, the options for the Discord API framework basically boiled down to
+
+1. [Kord](https://github.com/kordlib/kord)
+2. [Diskord](https://github.com/JesseCorbett/Diskord)
+3. [JDA](https://github.com/DV8FromTheWorld/JDA)
+
+It was and still is clear that JDA is the best choice out of them all because the other two don't support voice functionalities yet, which is a deal breaker. Such a shame that JDA doesn't support Kotlin coroutines though, but that makes sense since it was initially built for Java only, whatever. With that out of the way, it was a no-brainer to use [LavaPlayer](https://github.com/sedmelluq/lavaplayer) as the music player library because it doesn't have any other competition on its level in that area, it's just too good.
+
+## Implementation
+
+This part was actually pretty straightforward since the libraries abstracted away most of the technical complexities with setting up commands and event listeners. I did have to implement my own audio-related data structures though, but they weren't too bad. One Ok Bot uses three main data structures for audio operations.
+
+### Track scheduler
+
+The track scheduler is basically just a queue that blocks if there's nothing to dequeue, or if the queue is full and you're trying to enqueue. It uses a `LinkedBlockingQueue` internally to ensure thread-safeness. It also stores a LavaPlayer `AudioPlayer` instance and uses it to play the track at the beginning of the queue.
+
+### Guild music manager
+
+The guild music manager just wraps the track scheduler and implements some additional functionalities needed by the JDA audio interface, it doesn't do anything interesting.
+
+### Audio player manager
+
+The audio player manager is a massive boi that stores a mapping of each guild to its guild music manager, so that the corresponding music manager can easily be retrieved given a guild. This is pretty important since the event interface only provides information about the guild that it was created in and nothing about the corresponding music manager, which makes sense because the music manager is a custom class that I made. Other than that, the audio player manager is also responsible for loading Youtube URLs and queueing tracks / playlists when they're loaded. So any time you use one of the commands that queues a track or a playlist, it's the audio player manager that's doing the heavy lifting behind the scenes.
+
+## Future work
+
+One Ok Bot is already pretty gucci as it is right now, but there's still some improvements that can be made, e.g.
+
+- Using search instead of just accepting a cold hard URL
+- Looping a track
+- Printing out the track currently playing in a text channel
+
+Oh well whatever, I might work on them if I feel like it.
+
+## Why you should use it
+
+One Ok Bot has everything you need, from skincare tips to lo-fi beats to relax / study to. You're in good hands.
