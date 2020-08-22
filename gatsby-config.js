@@ -58,29 +58,8 @@ module.exports = {
         display: `standalone`,
       },
     },
-    `gatsby-plugin-offline`,
-    {
-      resolve: `gatsby-plugin-netlify`,
-      options: {
-        headers: {
-          '/public/page-data/*': [
-            'cache-control: public',
-            'cache-control: max-age=0',
-            'cache-control: must-revalidate',
-          ],
-          '/public/**/*.html': [
-            'cache-control: public',
-            'cache-control: max-age=0',
-            'cache-control: must-revalidate',
-          ],
-          '/public/sw.js': [
-            'cache-control: public',
-            'cache-control: max-age=0',
-            'cache-control: must-revalidate',
-          ],
-        },
-      },
-    },
+    `gatsby-plugin-remove-serviceworker`,
+    `gatsby-plugin-netlify`,
     shouldAnalyseBundle && {
       resolve: `gatsby-plugin-webpack-bundle-analyser-v2`,
       options: {
