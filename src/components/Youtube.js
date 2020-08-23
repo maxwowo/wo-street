@@ -1,6 +1,6 @@
 import React from 'react';
 
-const YoutubePlayer = ({ src }) => (
+const Youtube = ({ src }) => (
   <div
     style={{
       position: 'relative',
@@ -28,4 +28,4 @@ const YoutubePlayer = ({ src }) => (
   </div>
 );
 
-export default YoutubePlayer;
+export default Youtube;
