@@ -41,7 +41,7 @@ The guild music manager just wraps the track scheduler and implements some addit
 
 ### Audio player manager
 
-The audio player manager is a massive boi that stores a mapping of each guild to its guild music manager, so that the corresponding music manager can easily be retrieved given a guild. This is pretty important since the event interface only provides information about the guild that it was created in and nothing about the corresponding music manager, which makes sense because the music manager is a custom class that I made. Other than that, the audio player manager is also responsible for loading Youtube URLs and queueing tracks / playlists when they're loaded. So any time you use one of the commands that queues a track or a playlist, it's the audio player manager that's doing the heavy lifting behind the scenes.
+The audio player manager is a massive boi that stores a mapping of each guild to its guild music manager, so that the corresponding music manager can easily be retrieved given a guild. This is pretty important since the event interface only provides information about the guild that it was fired from and nothing about the corresponding music manager, which makes sense because the music manager is a custom class that I made. Other than that, the audio player manager is also responsible for loading Youtube URLs and queueing tracks / playlists when they're loaded. So any time you use one of the commands that queues a track or a playlist, it's the audio player manager that's doing the heavy lifting behind the scenes.
 
 ## Deployment
 
