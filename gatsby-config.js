@@ -16,6 +16,7 @@ module.exports = {
     {
       resolve: `@lekoarts/gatsby-theme-minimal-blog`,
       options: {
+        mdx: false,
         navigation: [
           {
             title: `Blog`,
@@ -56,6 +57,38 @@ module.exports = {
         background_color: `#fff`,
         theme_color: `#6B46C1`,
         display: `standalone`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [`.mdx`, `.md`],
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 960,
+              quality: 90,
+              linkImagesToOriginal: false,
+            },
+          },
+          {
+            resolve: `gatsby-remark-katex`,
+            options: {
+              strict: false,
+            },
+          },
+        ],
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 960,
+              quality: 90,
+              linkImagesToOriginal: false,
+            },
+          },
+        ],
       },
     },
     `gatsby-plugin-remove-serviceworker`,
