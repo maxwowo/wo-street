@@ -91,6 +91,7 @@ module.exports = {
         ],
       },
     },
+    `gatsby-plugin-no-sourcemaps`,
     `gatsby-plugin-remove-serviceworker`,
     `gatsby-plugin-netlify`,
     shouldAnalyseBundle && {
