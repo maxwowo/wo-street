@@ -20,4 +20,10 @@ Some of the operations related to gamer tags that need to be performed are
 - **Look-up**: determines the existence of a certain gamer tag
 - **Update**: given a gamer tag and a new username, frees the old discriminator, generates a discriminator for the new username and stores the new pair in the database, possibly throwing an exception if there are no free discriminators left for the new username
 
-The most naive approach would be to just store the taken discriminators for each username in a list, which translates to a many-to-many relationship that can be implemented with a table of two columns, username and discriminator.
+The most naive approach would be to just store the unavailable discriminators for each username in a list, which translates to a many-to-many relationship that can be implemented with a table of two columns, username and discriminator, with the primary key being the combination of the two columns.
+
+This actually sounds aight, shouldn't be too bad to implement either, so Imma just go with that.
+
+## Discriminator Farming
+
+Because people like having flashy discriminators like **#0001** or **#1337**, some have made scripts that repeatedly changes their Discord usernames back and forth in hopes of landing on the desired discriminator. That sounds pretty smart, but unfortunately can be quite stressful for the servers to deal with. This means that I should also have a field in the user table that tracks the time of a user's latest name change in order to limit the name-changing frequency to be once a day or something.
