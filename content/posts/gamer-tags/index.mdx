@@ -1,0 +1,23 @@
+---
+title: Gamer Tags
+date: 2020-09-08
+tags:
+  - Jikanban
+  - Backend
+---
+
+Part of what makes Discord's anonymous trial experience so great is that Discord's user system works by storing two identifiers, a username and a discriminator, for each user, which, together, form what's known as a gamer tag. This looks something like **Buddhaha#4891**, which is what you'd need to put in if you wanted to add me on Discord. The main advantage of this approach is that it minimizes the impact that trial users can have on the username space. This is because trial users also get to choose a username that is stored in the database, since they need to be able to interact with servers and other users. Allowing users to choose a unique username, which is the technique used by many platforms today, means that a lot of good usernames may get taken by the trial users, leaving those that are signing up for real dissatisfied.
+
+The gamer tag system alleviates this issue by ensuring that multiple usernames can exist at once, since the username is just one part of the unique key. This means that even if some random trial user takes **XX_D34TH_R34P3R_XX**, you will still be able to sign up with that name. It's worth noting that Discord's discriminator consists of four digits, which should range from **#0001** to **#9999**, allowing a total of 9999 occurrences for a given username to be registered.
+
+Since Jikanban will also offer a trial experience, I'll have to implement something that mimics Discord's gamer tag system. Surprisingly enough I couldn't find any resources online related to making something like that, so this post shall serve as the first ever documentation in the history of humanity about implementing a user system based on gamer tags. We're treading uncharted territories here.
+
+## Implementation
+
+Some of the operations related to gamer tags that need to be performed are
+
+- **Insert**: given a username, generates a discriminator for it and stores the pair in the database, possibly throwing an exception if there are no free discriminators left for the given username
+- **Look-up**: determines the existence of a certain gamer tag
+- **Update**: given a gamer tag and a new username, frees the old discriminator, generates a discriminator for the new username and stores the new pair in the database, possibly throwing an exception if there are no free discriminators left for the new username
+
+The most naive approach would be to just store the taken discriminators for each username in a list, which translates to a many-to-many relationship that can be implemented with a table of two columns, username and discriminator.
