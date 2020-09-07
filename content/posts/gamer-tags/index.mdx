@@ -20,9 +20,9 @@ Some of the operations related to gamer tags that need to be performed are
 - **Look-up**: determines the existence of a certain gamer tag
 - **Update**: given a gamer tag and a new username, frees the old discriminator, generates a discriminator for the new username and stores the new pair in the database, possibly throwing an exception if there are no free discriminators left for the new username
 
-The most naive approach would be to just store the unavailable discriminators for each username in a list, which translates to a many-to-many relationship that can be implemented with a table of two columns, username and discriminator, with the primary key being the combination of the two columns.
+These operations should also be atomic, since they consist of more fine-grained queries that can't be interleaved with queries from other operations. This shouldn't be too bad, they can just be defined as transactions in the database.
 
-This actually sounds aight, shouldn't be too bad to implement either, so Imma just go with that.
+The most naive approach would be to just store the unavailable discriminators for each username in a list, which translates to a many-to-many relationship that can be implemented with a table of two columns, username and discriminator, with the primary key being the combination of the two columns. The disadvantage of this approach is that generating a new gamer tag potentially means scanning through 9999 different gamer tags, since in the worst case every discriminator for the username is taken. It doesn't seem like there's any other way though, it eez what it eez.
 
 ## Discriminator Farming
 
