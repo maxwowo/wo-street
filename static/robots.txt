@@ -1,0 +1,3 @@
+User-agent: *
+
+sitemap: https://street.maxwowo.com/sitemap-index.xml
