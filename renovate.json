@@ -1,3 +1,9 @@
 {
-  "extends": ["default:automergeAll"]
+  "extends": ["default:automergeAll"],
+  "packageRules": [
+    {
+      "matchPackageNames": ["react", "react-dom", "@types/react", "@types/react-dom"],
+      "allowedVersions": "<19.0.0"
+    }
+  ]
 }
