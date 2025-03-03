@@ -35,13 +35,13 @@ importers:
     devDependencies:
       '@commitlint/cli':
         specifier: ^19.6.1
-        version: 19.7.1(@types/node@22.13.8)(typescript@5.8.2)
+        version: 19.7.1(@types/node@22.13.9)(typescript@5.8.2)
       '@commitlint/config-conventional':
         specifier: ^19.6.0
         version: 19.7.1
       '@types/node':
         specifier: ^22.0.0
-        version: 22.13.8
+        version: 22.13.9
       '@types/react':
         specifier: ^18.2.51
         version: 18.3.18
@@ -1694,11 +1694,11 @@ packages:
   '@types/node@17.0.45':
     resolution: {integrity: sha512-w+tIMs3rq2afQdsPJlODhoUEKzFP1ayaoyl1CcnwtIlsVe7K7bA1NGm4s3PraqTLlXnbIN84zuBlxBWo1u9BLw==}
 
-  '@types/node@18.19.78':
-    resolution: {integrity: sha512-m1ilZCTwKLkk9rruBJXFeYN0Bc5SbjirwYX/Td3MqPfioYbgun3IvK/m8dQxMCnrPGZPg1kvXjp3SIekCN/ynw==}
+  '@types/node@18.19.79':
+    resolution: {integrity: sha512-90K8Oayimbctc5zTPHPfZloc/lGVs7f3phUAAMcTgEPtg8kKquGZDERC8K4vkBYkQQh48msiYUslYtxTWvqcAg==}
 
-  '@types/node@22.13.8':
-    resolution: {integrity: sha512-G3EfaZS+iOGYWLLRCEAXdWK9my08oHNZ+FHluRiggIYJPOXzhOiDgpVCUHaUvyIC5/fj7C/p637jdzC666AOKQ==}
+  '@types/node@22.13.9':
+    resolution: {integrity: sha512-acBjXdRJ3A6Pb3tqnw9HZmyR3Fiol3aGxRCK1x3d+6CDAMjl7I649wpSd+yNURCjbOUGu9tqtLKnTGxmK6CyGw==}
 
   '@types/node@8.10.66':
     resolution: {integrity: sha512-tktOkFUA4kXx2hhhrB8bIFb5TbwzS4uOhKEmwiD+NoiL0qtP2OQ9mFldbgD4dV1djrlBYP6eBuQZiWjuHUpqFw==}
@@ -7661,11 +7661,11 @@ snapshots:
 
   '@builder.io/partytown@0.7.6': {}
 
-  '@commitlint/cli@19.7.1(@types/node@22.13.8)(typescript@5.8.2)':
+  '@commitlint/cli@19.7.1(@types/node@22.13.9)(typescript@5.8.2)':
     dependencies:
       '@commitlint/format': 19.5.0
       '@commitlint/lint': 19.7.1
-      '@commitlint/load': 19.6.1(@types/node@22.13.8)(typescript@5.8.2)
+      '@commitlint/load': 19.6.1(@types/node@22.13.9)(typescript@5.8.2)
       '@commitlint/read': 19.5.0
       '@commitlint/types': 19.5.0
       tinyexec: 0.3.2
@@ -7712,7 +7712,7 @@ snapshots:
       '@commitlint/rules': 19.6.0
       '@commitlint/types': 19.5.0
 
-  '@commitlint/load@19.6.1(@types/node@22.13.8)(typescript@5.8.2)':
+  '@commitlint/load@19.6.1(@types/node@22.13.9)(typescript@5.8.2)':
     dependencies:
       '@commitlint/config-validator': 19.5.0
       '@commitlint/execute-rule': 19.5.0
@@ -7720,7 +7720,7 @@ snapshots:
       '@commitlint/types': 19.5.0
       chalk: 5.4.1
       cosmiconfig: 9.0.0(typescript@5.8.2)
-      cosmiconfig-typescript-loader: 6.1.0(@types/node@22.13.8)(cosmiconfig@9.0.0(typescript@5.8.2))(typescript@5.8.2)
+      cosmiconfig-typescript-loader: 6.1.0(@types/node@22.13.9)(cosmiconfig@9.0.0(typescript@5.8.2))(typescript@5.8.2)
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
@@ -8618,7 +8618,7 @@ snapshots:
   '@statoscope/report-writer@5.28.1':
     dependencies:
       '@discoveryjs/json-ext': 0.5.7
-      '@types/node': 18.19.78
+      '@types/node': 18.19.79
       '@types/pako': 2.0.3
       pako: 2.1.0
 
@@ -8686,7 +8686,7 @@ snapshots:
       '@statoscope/webpack-stats-extension-compressed': 5.28.2(webpack@5.91.0)
       '@statoscope/webpack-stats-extension-package-info': 5.28.2(webpack@5.91.0)
       '@statoscope/webpack-ui': 5.28.2
-      '@types/node': 18.19.78
+      '@types/node': 18.19.79
       '@types/webpack': 5.28.5
       open: 8.4.2
       webpack: 5.91.0
@@ -8879,7 +8879,7 @@ snapshots:
     dependencies:
       '@types/http-cache-semantics': 4.0.4
       '@types/keyv': 3.1.4
-      '@types/node': 22.13.8
+      '@types/node': 22.13.9
       '@types/responselike': 1.0.3
 
   '@types/common-tags@1.8.4': {}
@@ -8888,13 +8888,13 @@ snapshots:
 
   '@types/conventional-commits-parser@5.0.1':
     dependencies:
-      '@types/node': 22.13.8
+      '@types/node': 22.13.9
 
   '@types/cookie@0.4.1': {}
 
   '@types/cors@2.8.17':
     dependencies:
-      '@types/node': 22.13.8
+      '@types/node': 22.13.9
 
   '@types/debug@0.0.30': {}
 
@@ -8930,7 +8930,7 @@ snapshots:
   '@types/glob@5.0.38':
     dependencies:
       '@types/minimatch': 5.1.2
-      '@types/node': 22.13.8
+      '@types/node': 22.13.9
 
   '@types/hast@2.3.10':
     dependencies:
@@ -8940,7 +8940,7 @@ snapshots:
 
   '@types/http-proxy@1.17.15':
     dependencies:
-      '@types/node': 22.13.8
+      '@types/node': 22.13.9
 
   '@types/json-schema@7.0.15': {}
 
@@ -8948,7 +8948,7 @@ snapshots:
 
   '@types/keyv@3.1.4':
     dependencies:
-      '@types/node': 22.13.8
+      '@types/node': 22.13.9
 
   '@types/lodash@4.17.14': {}
 
@@ -8964,17 +8964,17 @@ snapshots:
 
   '@types/mkdirp@0.5.2':
     dependencies:
-      '@types/node': 22.13.8
+      '@types/node': 22.13.9
 
   '@types/ms@0.7.34': {}
 
   '@types/node@17.0.45': {}
 
-  '@types/node@18.19.78':
+  '@types/node@18.19.79':
     dependencies:
       undici-types: 5.26.5
 
-  '@types/node@22.13.8':
+  '@types/node@22.13.9':
     dependencies:
       undici-types: 6.20.0
 
@@ -9003,16 +9003,16 @@ snapshots:
 
   '@types/responselike@1.0.3':
     dependencies:
-      '@types/node': 22.13.8
+      '@types/node': 22.13.9
 
   '@types/rimraf@2.0.5':
     dependencies:
       '@types/glob': 5.0.38
-      '@types/node': 22.13.8
+      '@types/node': 22.13.9
 
   '@types/sax@1.2.7':
     dependencies:
-      '@types/node': 22.13.8
+      '@types/node': 22.13.9
 
   '@types/semver@7.5.8': {}
 
@@ -9028,7 +9028,7 @@ snapshots:
 
   '@types/webpack@5.28.5':
     dependencies:
-      '@types/node': 22.13.8
+      '@types/node': 22.13.9
       tapable: 2.2.1
       webpack: 5.91.0
     transitivePeerDependencies:
@@ -10129,9 +10129,9 @@ snapshots:
       object-assign: 4.1.1
       vary: 1.1.2
 
-  cosmiconfig-typescript-loader@6.1.0(@types/node@22.13.8)(cosmiconfig@9.0.0(typescript@5.8.2))(typescript@5.8.2):
+  cosmiconfig-typescript-loader@6.1.0(@types/node@22.13.9)(cosmiconfig@9.0.0(typescript@5.8.2))(typescript@5.8.2):
     dependencies:
-      '@types/node': 22.13.8
+      '@types/node': 22.13.9
       cosmiconfig: 9.0.0(typescript@5.8.2)
       jiti: 2.4.2
       typescript: 5.8.2
@@ -10549,7 +10549,7 @@ snapshots:
     dependencies:
       '@types/cookie': 0.4.1
       '@types/cors': 2.8.17
-      '@types/node': 22.13.8
+      '@types/node': 22.13.9
       accepts: 1.3.8
       base64id: 2.0.0
       cookie: 0.4.2
@@ -12448,13 +12448,13 @@ snapshots:
 
   jest-worker@26.6.2:
     dependencies:
-      '@types/node': 22.13.8
+      '@types/node': 22.13.9
       merge-stream: 2.0.0
       supports-color: 7.2.0
 
   jest-worker@27.5.1:
     dependencies:
-      '@types/node': 22.13.8
+      '@types/node': 22.13.9
       merge-stream: 2.0.0
       supports-color: 8.1.1
 
