@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@lekoarts/gatsby-theme-minimal-blog':
         specifier: ^6.2.1
-        version: 6.2.4(@theme-ui/css@0.15.7(@emotion/react@11.14.0(@types/react@18.3.20)(react@18.3.1)))(@types/mdx@2.0.13)(@types/react@18.3.20)(gatsby@5.14.3(@types/webpack@5.28.5)(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.8.3))(graphql@16.10.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 6.2.4(@theme-ui/css@0.15.7(@emotion/react@11.14.0(@types/react@18.3.21)(react@18.3.1)))(@types/mdx@2.0.13)(@types/react@18.3.21)(gatsby@5.14.3(@types/webpack@5.28.5)(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.8.3))(graphql@16.10.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       gatsby:
         specifier: ^5.13.3
         version: 5.14.3(@types/webpack@5.28.5)(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.8.3)
@@ -44,10 +44,10 @@ importers:
         version: 22.15.3
       '@types/react':
         specifier: ^18.2.51
-        version: 18.3.20
+        version: 18.3.21
       '@types/react-dom':
         specifier: ^18.2.18
-        version: 18.3.7(@types/react@18.3.20)
+        version: 18.3.7(@types/react@18.3.21)
       cross-env:
         specifier: ^7.0.3
         version: 7.0.3
@@ -77,6 +77,10 @@ packages:
     resolution: {integrity: sha512-RJlIHRueQgwWitWgF8OdFYGZX328Ax5BCemNGlqHfplnRT9ESi8JkFlvaVYbS+UubVY6dpv87Fs2u5M29iNFVQ==}
     engines: {node: '>=6.9.0'}
 
+  '@babel/code-frame@7.27.1':
+    resolution: {integrity: sha512-cjQ7ZlQ0Mv3b47hABuTevyTuYN4i+loJKGeV9flcCgIK37cCXRh+L1bd3iBHlynerhQ7BhCkn2BPbQUL+rGqFg==}
+    engines: {node: '>=6.9.0'}
+
   '@babel/compat-data@7.26.8':
     resolution: {integrity: sha512-oH5UPLMWR3L2wEFLnFJ1TZXqHufiTKAiLfqw5zkhS4dKXLJ10yVztfil/twG8EDTA4F/tvVNw9nOl4ZMslB8rQ==}
     engines: {node: '>=6.9.0'}
@@ -94,6 +98,10 @@ packages:
 
   '@babel/generator@7.27.0':
     resolution: {integrity: sha512-VybsKvpiN1gU1sdMZIp7FcqphVVKEwcuj02x73uvcHE0PTihx1nlBcowYWhDwjpoAXRv43+gDzyggGnn1XZhVw==}
+    engines: {node: '>=6.9.0'}
+
+  '@babel/generator@7.27.1':
+    resolution: {integrity: sha512-UnJfnIpc/+JO0/+KRVQNGU+y5taA5vCbwN8+azkX6beii/ZF+enZJSOKo11ZSzGJjlNfJHfQtmQT8H+9TXPG2w==}
     engines: {node: '>=6.9.0'}
 
   '@babel/helper-annotate-as-pure@7.25.9':
@@ -163,8 +171,16 @@ packages:
     resolution: {integrity: sha512-4A/SCr/2KLd5jrtOMFzaKjVtAei3+2r/NChoBNoZ3EyP/+GlhoaEGoWOZUmFmoITP7zOJyHIMm+DYRd8o3PvHA==}
     engines: {node: '>=6.9.0'}
 
+  '@babel/helper-string-parser@7.27.1':
+    resolution: {integrity: sha512-qMlSxKbpRlAridDExk92nSobyDdpPijUq2DW6oDnUqd0iOGxmQjyqhMIihI9+zv4LPyZdRje2cavWPbCbWm3eA==}
+    engines: {node: '>=6.9.0'}
+
   '@babel/helper-validator-identifier@7.25.9':
     resolution: {integrity: sha512-Ed61U6XJc3CVRfkERJWDz4dJwKe7iLmmJsbOGu9wSloNSFttHV0I8g6UAgb7qnK5ly5bGLPd4oXZlxCdANBOWQ==}
+    engines: {node: '>=6.9.0'}
+
+  '@babel/helper-validator-identifier@7.27.1':
+    resolution: {integrity: sha512-D2hP9eA+Sqx1kBZgzxZh0y1trbuU+JoDkiEwqhQ36nodYqJwyEIhPSdMNd7lOm/4io72luTPWH20Yda0xOuUow==}
     engines: {node: '>=6.9.0'}
 
   '@babel/helper-validator-option@7.25.9':
@@ -185,6 +201,11 @@ packages:
 
   '@babel/parser@7.27.0':
     resolution: {integrity: sha512-iaepho73/2Pz7w2eMS0Q5f83+0RKI7i4xmiYeBmDzfRVbQtTOG7Ts0S4HzJVsTMGI9keU8rNfuZr8DKfSt7Yyg==}
+    engines: {node: '>=6.0.0'}
+    hasBin: true
+
+  '@babel/parser@7.27.1':
+    resolution: {integrity: sha512-I0dZ3ZpCrJ1c04OqlNsQcKiZlsrXf/kkE4FXzID9rIOYICsAbA8mMDzhW/luRNAHdCNt7os/u8wenklZDlUVUQ==}
     engines: {node: '>=6.0.0'}
     hasBin: true
 
@@ -702,12 +723,24 @@ packages:
     resolution: {integrity: sha512-2ncevenBqXI6qRMukPlXwHKHchC7RyMuu4xv5JBXRfOGVcTy1mXCD12qrp7Jsoxll1EV3+9sE4GugBVRjT2jFA==}
     engines: {node: '>=6.9.0'}
 
+  '@babel/template@7.27.1':
+    resolution: {integrity: sha512-Fyo3ghWMqkHHpHQCoBs2VnYjR4iWFFjguTDEqA5WgZDOrFesVjMhMM2FSqTKSoUSDO1VQtavj8NFpdRBEvJTtg==}
+    engines: {node: '>=6.9.0'}
+
   '@babel/traverse@7.27.0':
     resolution: {integrity: sha512-19lYZFzYVQkkHkl4Cy4WrAVcqBkgvV2YM2TU3xG6DIwO7O3ecbDPfW3yM3bjAGcqcQHi+CCtjMR3dIEHxsd6bA==}
     engines: {node: '>=6.9.0'}
 
+  '@babel/traverse@7.27.1':
+    resolution: {integrity: sha512-ZCYtZciz1IWJB4U61UPu4KEaqyfj+r5T1Q5mqPo+IBpcG9kHv30Z0aD8LXPgC1trYa6rK0orRyAhqUgk4MjmEg==}
+    engines: {node: '>=6.9.0'}
+
   '@babel/types@7.27.0':
     resolution: {integrity: sha512-H45s8fVLYjbhFH62dIJ3WtmJ6RSPt/3DRO0ZcT2SUiYiQyz3BLVb9ADEnLl91m74aQPS3AzzeajZHYOalWe3bg==}
+    engines: {node: '>=6.9.0'}
+
+  '@babel/types@7.27.1':
+    resolution: {integrity: sha512-+EzkxvLNfiUeKMgy/3luqfsCWFRXLb7U6wNQTk60tovuckwB15B191tJWvpp4HjiQWdJkCxO3Wbvc6jlk3Xb2Q==}
     engines: {node: '>=6.9.0'}
 
   '@builder.io/partytown@0.7.6':
@@ -1706,8 +1739,8 @@ packages:
     peerDependencies:
       '@types/react': ^18.0.0
 
-  '@types/react@18.3.20':
-    resolution: {integrity: sha512-IPaCZN7PShZK/3t6Q87pfTkRm6oLTd4vztyoj+cbHUF1g3FfVb2tFIL79uCRKEfv16AhqDMBywP2VW3KIZUvcg==}
+  '@types/react@18.3.21':
+    resolution: {integrity: sha512-gXLBtmlcRJeT09/sI4PxVwyrku6SaNUj/6cMubjE6T6XdY1fDmBL7r0nX0jbSZPU/Xr0KuwLLZh6aOYY5d91Xw==}
 
   '@types/responselike@1.0.3':
     resolution: {integrity: sha512-H/+L+UkTV33uf49PH5pCAUBVPNj2nDBXTN+qS1dOwyyg24l3CcicicCA7ca+HMvJBZcFgl5r8e+RR6elsb4Lyw==}
@@ -6772,6 +6805,12 @@ snapshots:
       js-tokens: 4.0.0
       picocolors: 1.1.1
 
+  '@babel/code-frame@7.27.1':
+    dependencies:
+      '@babel/helper-validator-identifier': 7.27.1
+      js-tokens: 4.0.0
+      picocolors: 1.1.1
+
   '@babel/compat-data@7.26.8': {}
 
   '@babel/core@7.26.10':
@@ -6806,6 +6845,14 @@ snapshots:
     dependencies:
       '@babel/parser': 7.27.0
       '@babel/types': 7.27.0
+      '@jridgewell/gen-mapping': 0.3.8
+      '@jridgewell/trace-mapping': 0.3.25
+      jsesc: 3.1.0
+
+  '@babel/generator@7.27.1':
+    dependencies:
+      '@babel/parser': 7.27.1
+      '@babel/types': 7.27.1
       '@jridgewell/gen-mapping': 0.3.8
       '@jridgewell/trace-mapping': 0.3.25
       jsesc: 3.1.0
@@ -6909,7 +6956,11 @@ snapshots:
 
   '@babel/helper-string-parser@7.25.9': {}
 
+  '@babel/helper-string-parser@7.27.1': {}
+
   '@babel/helper-validator-identifier@7.25.9': {}
+
+  '@babel/helper-validator-identifier@7.27.1': {}
 
   '@babel/helper-validator-option@7.25.9': {}
 
@@ -6936,6 +6987,10 @@ snapshots:
   '@babel/parser@7.27.0':
     dependencies:
       '@babel/types': 7.27.0
+
+  '@babel/parser@7.27.1':
+    dependencies:
+      '@babel/types': 7.27.1
 
   '@babel/plugin-bugfix-firefox-class-in-computed-class-key@7.25.9(@babel/core@7.26.10)':
     dependencies:
@@ -7571,6 +7626,12 @@ snapshots:
       '@babel/parser': 7.27.0
       '@babel/types': 7.27.0
 
+  '@babel/template@7.27.1':
+    dependencies:
+      '@babel/code-frame': 7.27.1
+      '@babel/parser': 7.27.1
+      '@babel/types': 7.27.1
+
   '@babel/traverse@7.27.0':
     dependencies:
       '@babel/code-frame': 7.26.2
@@ -7583,10 +7644,27 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  '@babel/traverse@7.27.1':
+    dependencies:
+      '@babel/code-frame': 7.27.1
+      '@babel/generator': 7.27.1
+      '@babel/parser': 7.27.1
+      '@babel/template': 7.27.1
+      '@babel/types': 7.27.1
+      debug: 4.4.0
+      globals: 11.12.0
+    transitivePeerDependencies:
+      - supports-color
+
   '@babel/types@7.27.0':
     dependencies:
       '@babel/helper-string-parser': 7.25.9
       '@babel/helper-validator-identifier': 7.25.9
+
+  '@babel/types@7.27.1':
+    dependencies:
+      '@babel/helper-string-parser': 7.27.1
+      '@babel/helper-validator-identifier': 7.27.1
 
   '@builder.io/partytown@0.7.6': {}
 
@@ -7740,7 +7818,7 @@ snapshots:
 
   '@emotion/memoize@0.9.0': {}
 
-  '@emotion/react@11.14.0(@types/react@18.3.20)(react@18.3.1)':
+  '@emotion/react@11.14.0(@types/react@18.3.21)(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.26.0
       '@emotion/babel-plugin': 11.13.5
@@ -7752,7 +7830,7 @@ snapshots:
       hoist-non-react-statics: 3.3.2
       react: 18.3.1
     optionalDependencies:
-      '@types/react': 18.3.20
+      '@types/react': 18.3.21
     transitivePeerDependencies:
       - supports-color
 
@@ -8035,22 +8113,22 @@ snapshots:
       - graphql
       - supports-color
 
-  '@lekoarts/gatsby-theme-minimal-blog@6.2.4(@theme-ui/css@0.15.7(@emotion/react@11.14.0(@types/react@18.3.20)(react@18.3.1)))(@types/mdx@2.0.13)(@types/react@18.3.20)(gatsby@5.14.3(@types/webpack@5.28.5)(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.8.3))(graphql@16.10.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@lekoarts/gatsby-theme-minimal-blog@6.2.4(@theme-ui/css@0.15.7(@emotion/react@11.14.0(@types/react@18.3.21)(react@18.3.1)))(@types/mdx@2.0.13)(@types/react@18.3.21)(gatsby@5.14.3(@types/webpack@5.28.5)(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.8.3))(graphql@16.10.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@emotion/react': 11.14.0(@types/react@18.3.20)(react@18.3.1)
+      '@emotion/react': 11.14.0(@types/react@18.3.21)(react@18.3.1)
       '@lekoarts/gatsby-theme-minimal-blog-core': 6.2.4(gatsby@5.14.3(@types/webpack@5.28.5)(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.8.3))(graphql@16.10.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@lekoarts/themes-utils': 3.0.2
       '@mdx-js/react': 2.3.0(react@18.3.1)
-      '@theme-ui/color': 0.15.7(@emotion/react@11.14.0(@types/react@18.3.20)(react@18.3.1))
-      '@theme-ui/mdx': 0.15.7(@emotion/react@11.14.0(@types/react@18.3.20)(react@18.3.1))(@types/mdx@2.0.13)(react@18.3.1)
-      '@theme-ui/preset-tailwind': 0.15.3(@theme-ui/css@0.15.7(@emotion/react@11.14.0(@types/react@18.3.20)(react@18.3.1)))
+      '@theme-ui/color': 0.15.7(@emotion/react@11.14.0(@types/react@18.3.21)(react@18.3.1))
+      '@theme-ui/mdx': 0.15.7(@emotion/react@11.14.0(@types/react@18.3.21)(react@18.3.1))(@types/mdx@2.0.13)(react@18.3.1)
+      '@theme-ui/preset-tailwind': 0.15.3(@theme-ui/css@0.15.7(@emotion/react@11.14.0(@types/react@18.3.21)(react@18.3.1)))
       gatsby: 5.14.3(@types/webpack@5.28.5)(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.8.3)
       gatsby-plugin-catch-links: 5.14.0(gatsby@5.14.3(@types/webpack@5.28.5)(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.8.3))
-      gatsby-plugin-theme-ui: 0.15.7(@emotion/react@11.14.0(@types/react@18.3.20)(react@18.3.1))(@mdx-js/react@2.3.0(react@18.3.1))(@theme-ui/css@0.15.7(@emotion/react@11.14.0(@types/react@18.3.20)(react@18.3.1)))(@theme-ui/mdx@0.15.7(@emotion/react@11.14.0(@types/react@18.3.20)(react@18.3.1))(@types/mdx@2.0.13)(react@18.3.1))(gatsby@5.14.3(@types/webpack@5.28.5)(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.8.3))(react@18.3.1)(theme-ui@0.15.7(@emotion/react@11.14.0(@types/react@18.3.20)(react@18.3.1))(react@18.3.1))
+      gatsby-plugin-theme-ui: 0.15.7(@emotion/react@11.14.0(@types/react@18.3.21)(react@18.3.1))(@mdx-js/react@2.3.0(react@18.3.1))(@theme-ui/css@0.15.7(@emotion/react@11.14.0(@types/react@18.3.21)(react@18.3.1)))(@theme-ui/mdx@0.15.7(@emotion/react@11.14.0(@types/react@18.3.21)(react@18.3.1))(@types/mdx@2.0.13)(react@18.3.1))(gatsby@5.14.3(@types/webpack@5.28.5)(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.8.3))(react@18.3.1)(theme-ui@0.15.7(@emotion/react@11.14.0(@types/react@18.3.21)(react@18.3.1))(react@18.3.1))
       prism-react-renderer: 2.4.1(react@18.3.1)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-      theme-ui: 0.15.7(@emotion/react@11.14.0(@types/react@18.3.20)(react@18.3.1))(react@18.3.1)
+      theme-ui: 0.15.7(@emotion/react@11.14.0(@types/react@18.3.21)(react@18.3.1))(react@18.3.1)
     transitivePeerDependencies:
       - '@theme-ui/css'
       - '@types/mdx'
@@ -8133,7 +8211,7 @@ snapshots:
   '@mdx-js/react@2.3.0(react@18.3.1)':
     dependencies:
       '@types/mdx': 2.0.13
-      '@types/react': 18.3.20
+      '@types/react': 18.3.21
       react: 18.3.1
 
   '@mischnic/json-sourcemap@0.1.1':
@@ -8730,68 +8808,68 @@ snapshots:
     dependencies:
       defer-to-connect: 2.0.1
 
-  '@theme-ui/color-modes@0.15.7(@emotion/react@11.14.0(@types/react@18.3.20)(react@18.3.1))(react@18.3.1)':
+  '@theme-ui/color-modes@0.15.7(@emotion/react@11.14.0(@types/react@18.3.21)(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@emotion/react': 11.14.0(@types/react@18.3.20)(react@18.3.1)
-      '@theme-ui/core': 0.15.7(@emotion/react@11.14.0(@types/react@18.3.20)(react@18.3.1))(react@18.3.1)
-      '@theme-ui/css': 0.15.7(@emotion/react@11.14.0(@types/react@18.3.20)(react@18.3.1))
+      '@emotion/react': 11.14.0(@types/react@18.3.21)(react@18.3.1)
+      '@theme-ui/core': 0.15.7(@emotion/react@11.14.0(@types/react@18.3.21)(react@18.3.1))(react@18.3.1)
+      '@theme-ui/css': 0.15.7(@emotion/react@11.14.0(@types/react@18.3.21)(react@18.3.1))
       deepmerge: 4.3.1
       react: 18.3.1
 
-  '@theme-ui/color@0.15.7(@emotion/react@11.14.0(@types/react@18.3.20)(react@18.3.1))':
+  '@theme-ui/color@0.15.7(@emotion/react@11.14.0(@types/react@18.3.21)(react@18.3.1))':
     dependencies:
-      '@theme-ui/css': 0.15.7(@emotion/react@11.14.0(@types/react@18.3.20)(react@18.3.1))
+      '@theme-ui/css': 0.15.7(@emotion/react@11.14.0(@types/react@18.3.21)(react@18.3.1))
       polished: 4.3.1
     transitivePeerDependencies:
       - '@emotion/react'
 
-  '@theme-ui/components@0.15.7(@emotion/react@11.14.0(@types/react@18.3.20)(react@18.3.1))(react@18.3.1)':
+  '@theme-ui/components@0.15.7(@emotion/react@11.14.0(@types/react@18.3.21)(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@emotion/react': 11.14.0(@types/react@18.3.20)(react@18.3.1)
+      '@emotion/react': 11.14.0(@types/react@18.3.21)(react@18.3.1)
       '@styled-system/color': 5.1.2
       '@styled-system/should-forward-prop': 5.1.5
       '@styled-system/space': 5.1.2
-      '@theme-ui/css': 0.15.7(@emotion/react@11.14.0(@types/react@18.3.20)(react@18.3.1))
+      '@theme-ui/css': 0.15.7(@emotion/react@11.14.0(@types/react@18.3.21)(react@18.3.1))
       '@types/styled-system': 5.1.23
       react: 18.3.1
 
-  '@theme-ui/core@0.15.7(@emotion/react@11.14.0(@types/react@18.3.20)(react@18.3.1))(react@18.3.1)':
+  '@theme-ui/core@0.15.7(@emotion/react@11.14.0(@types/react@18.3.21)(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@emotion/react': 11.14.0(@types/react@18.3.20)(react@18.3.1)
-      '@theme-ui/css': 0.15.7(@emotion/react@11.14.0(@types/react@18.3.20)(react@18.3.1))
+      '@emotion/react': 11.14.0(@types/react@18.3.21)(react@18.3.1)
+      '@theme-ui/css': 0.15.7(@emotion/react@11.14.0(@types/react@18.3.21)(react@18.3.1))
       deepmerge: 4.3.1
       react: 18.3.1
 
-  '@theme-ui/css@0.15.7(@emotion/react@11.14.0(@types/react@18.3.20)(react@18.3.1))':
+  '@theme-ui/css@0.15.7(@emotion/react@11.14.0(@types/react@18.3.21)(react@18.3.1))':
     dependencies:
-      '@emotion/react': 11.14.0(@types/react@18.3.20)(react@18.3.1)
+      '@emotion/react': 11.14.0(@types/react@18.3.21)(react@18.3.1)
       csstype: 3.1.3
 
-  '@theme-ui/global@0.15.7(@emotion/react@11.14.0(@types/react@18.3.20)(react@18.3.1))(react@18.3.1)':
+  '@theme-ui/global@0.15.7(@emotion/react@11.14.0(@types/react@18.3.21)(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@emotion/react': 11.14.0(@types/react@18.3.20)(react@18.3.1)
-      '@theme-ui/core': 0.15.7(@emotion/react@11.14.0(@types/react@18.3.20)(react@18.3.1))(react@18.3.1)
-      '@theme-ui/css': 0.15.7(@emotion/react@11.14.0(@types/react@18.3.20)(react@18.3.1))
+      '@emotion/react': 11.14.0(@types/react@18.3.21)(react@18.3.1)
+      '@theme-ui/core': 0.15.7(@emotion/react@11.14.0(@types/react@18.3.21)(react@18.3.1))(react@18.3.1)
+      '@theme-ui/css': 0.15.7(@emotion/react@11.14.0(@types/react@18.3.21)(react@18.3.1))
       react: 18.3.1
 
-  '@theme-ui/mdx@0.15.7(@emotion/react@11.14.0(@types/react@18.3.20)(react@18.3.1))(@types/mdx@2.0.13)(react@18.3.1)':
+  '@theme-ui/mdx@0.15.7(@emotion/react@11.14.0(@types/react@18.3.21)(react@18.3.1))(@types/mdx@2.0.13)(react@18.3.1)':
     dependencies:
-      '@emotion/react': 11.14.0(@types/react@18.3.20)(react@18.3.1)
-      '@theme-ui/core': 0.15.7(@emotion/react@11.14.0(@types/react@18.3.20)(react@18.3.1))(react@18.3.1)
-      '@theme-ui/css': 0.15.7(@emotion/react@11.14.0(@types/react@18.3.20)(react@18.3.1))
+      '@emotion/react': 11.14.0(@types/react@18.3.21)(react@18.3.1)
+      '@theme-ui/core': 0.15.7(@emotion/react@11.14.0(@types/react@18.3.21)(react@18.3.1))(react@18.3.1)
+      '@theme-ui/css': 0.15.7(@emotion/react@11.14.0(@types/react@18.3.21)(react@18.3.1))
       '@types/mdx': 2.0.13
       react: 18.3.1
 
-  '@theme-ui/preset-tailwind@0.15.3(@theme-ui/css@0.15.7(@emotion/react@11.14.0(@types/react@18.3.20)(react@18.3.1)))':
+  '@theme-ui/preset-tailwind@0.15.3(@theme-ui/css@0.15.7(@emotion/react@11.14.0(@types/react@18.3.21)(react@18.3.1)))':
     dependencies:
-      '@theme-ui/css': 0.15.7(@emotion/react@11.14.0(@types/react@18.3.20)(react@18.3.1))
+      '@theme-ui/css': 0.15.7(@emotion/react@11.14.0(@types/react@18.3.21)(react@18.3.1))
 
-  '@theme-ui/theme-provider@0.15.7(@emotion/react@11.14.0(@types/react@18.3.20)(react@18.3.1))(react@18.3.1)':
+  '@theme-ui/theme-provider@0.15.7(@emotion/react@11.14.0(@types/react@18.3.21)(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@emotion/react': 11.14.0(@types/react@18.3.20)(react@18.3.1)
-      '@theme-ui/color-modes': 0.15.7(@emotion/react@11.14.0(@types/react@18.3.20)(react@18.3.1))(react@18.3.1)
-      '@theme-ui/core': 0.15.7(@emotion/react@11.14.0(@types/react@18.3.20)(react@18.3.1))(react@18.3.1)
-      '@theme-ui/css': 0.15.7(@emotion/react@11.14.0(@types/react@18.3.20)(react@18.3.1))
+      '@emotion/react': 11.14.0(@types/react@18.3.21)(react@18.3.1)
+      '@theme-ui/color-modes': 0.15.7(@emotion/react@11.14.0(@types/react@18.3.21)(react@18.3.1))(react@18.3.1)
+      '@theme-ui/core': 0.15.7(@emotion/react@11.14.0(@types/react@18.3.21)(react@18.3.1))(react@18.3.1)
+      '@theme-ui/css': 0.15.7(@emotion/react@11.14.0(@types/react@18.3.21)(react@18.3.1))
       react: 18.3.1
 
   '@tokenizer/token@0.3.0': {}
@@ -8919,13 +8997,13 @@ snapshots:
 
   '@types/reach__router@1.3.15':
     dependencies:
-      '@types/react': 18.3.20
+      '@types/react': 18.3.21
 
-  '@types/react-dom@18.3.7(@types/react@18.3.20)':
+  '@types/react-dom@18.3.7(@types/react@18.3.21)':
     dependencies:
-      '@types/react': 18.3.20
+      '@types/react': 18.3.21
 
-  '@types/react@18.3.20':
+  '@types/react@18.3.21':
     dependencies:
       '@types/prop-types': 15.7.14
       csstype: 3.1.3
@@ -9383,10 +9461,10 @@ snapshots:
 
   babel-eslint@10.1.0(eslint@7.32.0):
     dependencies:
-      '@babel/code-frame': 7.26.2
-      '@babel/parser': 7.27.0
-      '@babel/traverse': 7.27.0
-      '@babel/types': 7.27.0
+      '@babel/code-frame': 7.27.1
+      '@babel/parser': 7.27.1
+      '@babel/traverse': 7.27.1
+      '@babel/types': 7.27.1
       eslint: 7.32.0
       eslint-visitor-keys: 1.3.0
       resolve: 1.22.10
@@ -11365,15 +11443,15 @@ snapshots:
       react-dom: 18.3.1(react@18.3.1)
       sitemap: 7.1.2
 
-  gatsby-plugin-theme-ui@0.15.7(@emotion/react@11.14.0(@types/react@18.3.20)(react@18.3.1))(@mdx-js/react@2.3.0(react@18.3.1))(@theme-ui/css@0.15.7(@emotion/react@11.14.0(@types/react@18.3.20)(react@18.3.1)))(@theme-ui/mdx@0.15.7(@emotion/react@11.14.0(@types/react@18.3.20)(react@18.3.1))(@types/mdx@2.0.13)(react@18.3.1))(gatsby@5.14.3(@types/webpack@5.28.5)(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.8.3))(react@18.3.1)(theme-ui@0.15.7(@emotion/react@11.14.0(@types/react@18.3.20)(react@18.3.1))(react@18.3.1)):
+  gatsby-plugin-theme-ui@0.15.7(@emotion/react@11.14.0(@types/react@18.3.21)(react@18.3.1))(@mdx-js/react@2.3.0(react@18.3.1))(@theme-ui/css@0.15.7(@emotion/react@11.14.0(@types/react@18.3.21)(react@18.3.1)))(@theme-ui/mdx@0.15.7(@emotion/react@11.14.0(@types/react@18.3.21)(react@18.3.1))(@types/mdx@2.0.13)(react@18.3.1))(gatsby@5.14.3(@types/webpack@5.28.5)(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.8.3))(react@18.3.1)(theme-ui@0.15.7(@emotion/react@11.14.0(@types/react@18.3.21)(react@18.3.1))(react@18.3.1)):
     dependencies:
-      '@emotion/react': 11.14.0(@types/react@18.3.20)(react@18.3.1)
+      '@emotion/react': 11.14.0(@types/react@18.3.21)(react@18.3.1)
       '@mdx-js/react': 2.3.0(react@18.3.1)
-      '@theme-ui/css': 0.15.7(@emotion/react@11.14.0(@types/react@18.3.20)(react@18.3.1))
-      '@theme-ui/mdx': 0.15.7(@emotion/react@11.14.0(@types/react@18.3.20)(react@18.3.1))(@types/mdx@2.0.13)(react@18.3.1)
+      '@theme-ui/css': 0.15.7(@emotion/react@11.14.0(@types/react@18.3.21)(react@18.3.1))
+      '@theme-ui/mdx': 0.15.7(@emotion/react@11.14.0(@types/react@18.3.21)(react@18.3.1))(@types/mdx@2.0.13)(react@18.3.1)
       gatsby: 5.14.3(@types/webpack@5.28.5)(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.8.3)
       react: 18.3.1
-      theme-ui: 0.15.7(@emotion/react@11.14.0(@types/react@18.3.20)(react@18.3.1))(react@18.3.1)
+      theme-ui: 0.15.7(@emotion/react@11.14.0(@types/react@18.3.21)(react@18.3.1))(react@18.3.1)
 
   gatsby-plugin-typescript@5.14.0(gatsby@5.14.3(@types/webpack@5.28.5)(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.8.3)):
     dependencies:
@@ -14701,14 +14779,14 @@ snapshots:
 
   text-table@0.2.0: {}
 
-  theme-ui@0.15.7(@emotion/react@11.14.0(@types/react@18.3.20)(react@18.3.1))(react@18.3.1):
+  theme-ui@0.15.7(@emotion/react@11.14.0(@types/react@18.3.21)(react@18.3.1))(react@18.3.1):
     dependencies:
-      '@theme-ui/color-modes': 0.15.7(@emotion/react@11.14.0(@types/react@18.3.20)(react@18.3.1))(react@18.3.1)
-      '@theme-ui/components': 0.15.7(@emotion/react@11.14.0(@types/react@18.3.20)(react@18.3.1))(react@18.3.1)
-      '@theme-ui/core': 0.15.7(@emotion/react@11.14.0(@types/react@18.3.20)(react@18.3.1))(react@18.3.1)
-      '@theme-ui/css': 0.15.7(@emotion/react@11.14.0(@types/react@18.3.20)(react@18.3.1))
-      '@theme-ui/global': 0.15.7(@emotion/react@11.14.0(@types/react@18.3.20)(react@18.3.1))(react@18.3.1)
-      '@theme-ui/theme-provider': 0.15.7(@emotion/react@11.14.0(@types/react@18.3.20)(react@18.3.1))(react@18.3.1)
+      '@theme-ui/color-modes': 0.15.7(@emotion/react@11.14.0(@types/react@18.3.21)(react@18.3.1))(react@18.3.1)
+      '@theme-ui/components': 0.15.7(@emotion/react@11.14.0(@types/react@18.3.21)(react@18.3.1))(react@18.3.1)
+      '@theme-ui/core': 0.15.7(@emotion/react@11.14.0(@types/react@18.3.21)(react@18.3.1))(react@18.3.1)
+      '@theme-ui/css': 0.15.7(@emotion/react@11.14.0(@types/react@18.3.21)(react@18.3.1))
+      '@theme-ui/global': 0.15.7(@emotion/react@11.14.0(@types/react@18.3.21)(react@18.3.1))(react@18.3.1)
+      '@theme-ui/theme-provider': 0.15.7(@emotion/react@11.14.0(@types/react@18.3.21)(react@18.3.1))(react@18.3.1)
       react: 18.3.1
     transitivePeerDependencies:
       - '@emotion/react'
