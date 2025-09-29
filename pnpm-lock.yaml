@@ -50,7 +50,7 @@ importers:
         version: 18.3.7(@types/react@18.3.24)
       cross-env:
         specifier: ^10.0.0
-        version: 10.0.0
+        version: 10.1.0
       husky:
         specifier: ^9.1.7
         version: 9.1.7
@@ -2615,8 +2615,8 @@ packages:
     resolution: {integrity: sha512-EjScC6GRDvL/mgbURFxv7gCkJmNqU1q+pptKx2ry11JbSzx1vvFIFXpiID3JxuM3fCzPcqh2GnCPUk+PU7lvLg==}
     hasBin: true
 
-  cross-env@10.0.0:
-    resolution: {integrity: sha512-aU8qlEK/nHYtVuN4p7UQgAwVljzMg8hB4YK5ThRqD2l/ziSnryncPNn7bMLt5cFYsKVKBh8HqLqyCoTupEUu7Q==}
+  cross-env@10.1.0:
+    resolution: {integrity: sha512-GsYosgnACZTADcmEyJctkJIoqAhHjttw7RsFrVoJNXbsWWqaq6Ym+7kZjq6mS45O0jij6vtiReppKQEtqWy6Dw==}
     engines: {node: '>=20'}
     hasBin: true
 
@@ -10077,7 +10077,7 @@ snapshots:
     dependencies:
       '@babel/runtime': 7.28.3
 
-  cross-env@10.0.0:
+  cross-env@10.1.0:
     dependencies:
       '@epic-web/invariant': 1.0.0
       cross-spawn: 7.0.6
