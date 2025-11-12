@@ -35,13 +35,13 @@ importers:
     devDependencies:
       '@commitlint/cli':
         specifier: ^20.0.0
-        version: 20.1.0(@types/node@24.10.0)(typescript@5.9.3)
+        version: 20.1.0(@types/node@24.10.1)(typescript@5.9.3)
       '@commitlint/config-conventional':
         specifier: ^20.0.0
         version: 20.0.0
       '@types/node':
         specifier: ^24.0.0
-        version: 24.10.0
+        version: 24.10.1
       '@types/react':
         specifier: ^18.2.51
         version: 18.3.26
@@ -1699,8 +1699,8 @@ packages:
   '@types/node@18.19.130':
     resolution: {integrity: sha512-GRaXQx6jGfL8sKfaIDD6OupbIHBr9jv7Jnaml9tB7l4v068PAOXqfcujMMo5PhbIs6ggR1XODELqahT2R8v0fg==}
 
-  '@types/node@24.10.0':
-    resolution: {integrity: sha512-qzQZRBqkFsYyaSWXuEHc2WR9c0a0CXwiE5FWUvn7ZM+vdy1uZLfCunD38UzhuB7YN/J11ndbDBcTmOdxJo9Q7A==}
+  '@types/node@24.10.1':
+    resolution: {integrity: sha512-GNWcUTRBgIRJD5zj+Tq0fKOJ5XZajIiBroOF0yvj2bSU1WvNdYS/dn9UxwsujGW4JX06dnHyjV2y9rRaybH0iQ==}
 
   '@types/pako@2.0.3':
     resolution: {integrity: sha512-bq0hMV9opAcrmE0Byyo0fY3Ew4tgOevJmQ9grUhpXQhYfyLJ1Kqg3P33JT5fdbT2AjeAjR51zqqVjAL/HMkx7Q==}
@@ -7664,11 +7664,11 @@ snapshots:
 
   '@builder.io/partytown@0.7.6': {}
 
-  '@commitlint/cli@20.1.0(@types/node@24.10.0)(typescript@5.9.3)':
+  '@commitlint/cli@20.1.0(@types/node@24.10.1)(typescript@5.9.3)':
     dependencies:
       '@commitlint/format': 20.0.0
       '@commitlint/lint': 20.0.0
-      '@commitlint/load': 20.1.0(@types/node@24.10.0)(typescript@5.9.3)
+      '@commitlint/load': 20.1.0(@types/node@24.10.1)(typescript@5.9.3)
       '@commitlint/read': 20.0.0
       '@commitlint/types': 20.0.0
       tinyexec: 1.0.1
@@ -7715,7 +7715,7 @@ snapshots:
       '@commitlint/rules': 20.0.0
       '@commitlint/types': 20.0.0
 
-  '@commitlint/load@20.1.0(@types/node@24.10.0)(typescript@5.9.3)':
+  '@commitlint/load@20.1.0(@types/node@24.10.1)(typescript@5.9.3)':
     dependencies:
       '@commitlint/config-validator': 20.0.0
       '@commitlint/execute-rule': 20.0.0
@@ -7723,7 +7723,7 @@ snapshots:
       '@commitlint/types': 20.0.0
       chalk: 5.6.2
       cosmiconfig: 9.0.0(typescript@5.9.3)
-      cosmiconfig-typescript-loader: 6.1.0(@types/node@24.10.0)(cosmiconfig@9.0.0(typescript@5.9.3))(typescript@5.9.3)
+      cosmiconfig-typescript-loader: 6.1.0(@types/node@24.10.1)(cosmiconfig@9.0.0(typescript@5.9.3))(typescript@5.9.3)
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
@@ -8910,18 +8910,18 @@ snapshots:
     dependencies:
       '@types/http-cache-semantics': 4.0.4
       '@types/keyv': 3.1.4
-      '@types/node': 24.10.0
+      '@types/node': 24.10.1
       '@types/responselike': 1.0.3
 
   '@types/common-tags@1.8.4': {}
 
   '@types/conventional-commits-parser@5.0.1':
     dependencies:
-      '@types/node': 24.10.0
+      '@types/node': 24.10.1
 
   '@types/cors@2.8.19':
     dependencies:
-      '@types/node': 24.10.0
+      '@types/node': 24.10.1
 
   '@types/debug@4.1.12':
     dependencies:
@@ -8958,7 +8958,7 @@ snapshots:
 
   '@types/http-proxy@1.17.16':
     dependencies:
-      '@types/node': 24.10.0
+      '@types/node': 24.10.1
 
   '@types/json-schema@7.0.15': {}
 
@@ -8966,7 +8966,7 @@ snapshots:
 
   '@types/keyv@3.1.4':
     dependencies:
-      '@types/node': 24.10.0
+      '@types/node': 24.10.1
 
   '@types/md5@2.3.5': {}
 
@@ -8984,7 +8984,7 @@ snapshots:
     dependencies:
       undici-types: 5.26.5
 
-  '@types/node@24.10.0':
+  '@types/node@24.10.1':
     dependencies:
       undici-types: 7.16.0
 
@@ -9011,11 +9011,11 @@ snapshots:
 
   '@types/responselike@1.0.3':
     dependencies:
-      '@types/node': 24.10.0
+      '@types/node': 24.10.1
 
   '@types/sax@1.2.7':
     dependencies:
-      '@types/node': 24.10.0
+      '@types/node': 24.10.1
 
   '@types/semver@7.5.8': {}
 
@@ -9031,7 +9031,7 @@ snapshots:
 
   '@types/webpack@5.28.5':
     dependencies:
-      '@types/node': 24.10.0
+      '@types/node': 24.10.1
       tapable: 2.2.1
       webpack: 5.101.3
     transitivePeerDependencies:
@@ -10072,9 +10072,9 @@ snapshots:
       object-assign: 4.1.1
       vary: 1.1.2
 
-  cosmiconfig-typescript-loader@6.1.0(@types/node@24.10.0)(cosmiconfig@9.0.0(typescript@5.9.3))(typescript@5.9.3):
+  cosmiconfig-typescript-loader@6.1.0(@types/node@24.10.1)(cosmiconfig@9.0.0(typescript@5.9.3))(typescript@5.9.3):
     dependencies:
-      '@types/node': 24.10.0
+      '@types/node': 24.10.1
       cosmiconfig: 9.0.0(typescript@5.9.3)
       jiti: 2.6.0
       typescript: 5.9.3
@@ -10464,7 +10464,7 @@ snapshots:
   engine.io@6.6.4:
     dependencies:
       '@types/cors': 2.8.19
-      '@types/node': 24.10.0
+      '@types/node': 24.10.1
       accepts: 1.3.8
       base64id: 2.0.0
       cookie: 0.7.2
@@ -12392,13 +12392,13 @@ snapshots:
 
   jest-worker@26.6.2:
     dependencies:
-      '@types/node': 24.10.0
+      '@types/node': 24.10.1
       merge-stream: 2.0.0
       supports-color: 7.2.0
 
   jest-worker@27.5.1:
     dependencies:
-      '@types/node': 24.10.0
+      '@types/node': 24.10.1
       merge-stream: 2.0.0
       supports-color: 8.1.1
 
